@@ -1,0 +1,104 @@
+#Login Page Objects
+usr_name=//input[@name='userName']
+pwd=//input[@name='password']
+btn_LogIn=//input[@name='login']
+
+
+#Home Page Objects
+text_home=//font[contains(text(),'Use our')]
+btn_BusinessSevices=.//*[@title='Show list of business services']/span[text()='Business Services']
+lbl_userTitle=/html/body/div/div/div/div/div[2]/div[1]/section[1]/div
+lnk_contact=//a[contains(text(),'Contacts')]
+lnk_newContact=//a[contains(text(),'New Contact')]
+btn_WorkViews=//div[@title='Show list of work views']/span[text()='Work Views']
+btn_Tools=//span[contains(text(),'Get Next NonSBNRE') and @class='jsx30toolbarbutton_lbl']/ancestor::span//preceding-sibling::span/span[contains(text(),'Tools')]
+btn_Search=//div[@jsxid='find']//div//table//tbody//tr//td[contains(text(),'Find Work Items')]
+btn_Find=//div[@title='Select a search attribute']
+btn_LoanRequest_attribute=//div[@jsxid='attribute1']/span[text()='Loan Request #']
+txtbx_StringValue=//input[@title='Enter a number value']
+img_find=//img[@title='Find the specified item(s)']
+loan_result=//div[@class='jsx30matrixcolumn_cell_value' and contains(text(),'"+DriverScriptTest.LoanID+"')]
+btn_OpenWorkItem=//div[@class='jsx30menu_3_kc ']//table/tbody//tr//td[contains(text(),'Open Selected')]
+Expand_Review=//div[@class='component control control_btnCatReview control-button control-non-list-mode Expandable']/div/div/button
+btn_New=//button[@title='New']
+drp_Accept=//div[@class='component control control_pane44__accepted control-optionlist control-non-list-mode required']/div/div/select
+btn_Save=//div[@class='tf-dialog-footer']//button[contains(text(),'Save')]
+btn_Complete=//button[@title='Complete']
+
+#BusinessServices Page Objects
+btn_AllBusinessServices=//div[contains(text(),'All Business Services')]/../preceding-sibling::td[@jsxtype='plusminus']
+btn_Commercial=html/body/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div[1]/div/div[2]/div/div[1]/div/div[4]/div/div[3]/div/div/div[3]/div/div/div[2]/div/div[3]/div/div[2]/table/tbody/tr/td[1]/div/table/tbody/tr/td[1]
+btn_CommercialLoanRequest=html/body/div[2]/div/div/div/div/div/div/div/div[3]/div/div/div[1]/div/div[2]/div/div[1]/div/div[4]/div/div[3]/div/div/div[3]/div/div/div[2]/div/div[3]/div/div[2]/div/div[3]/table/tbody/tr/td[1]/div/table/tbody/tr/td[3]/div
+btn_StartBusinessService=//*[contains(@title, 'Start the selected Business')]
+btn_NewLoanRequest=//*[contains(@title, 'New Loan Request')]
+top_loanid=//table[@class='pane-grid-content']//tr[2]/td[1]/div/div/div/span[@tabindex='0']
+
+
+
+#HeaderSection Page Objects
+drp_Division=//div[@class='component control control_requestInfo_division control-optionlist control-non-list-mode Required required']/div/div/select[@class='gwt-ListBox control-widget']
+txtbx_Branch=//div[@class='component control control_requestInfo_divBranch control-textinput control-non-list-mode Required required']/div/div/input[@class='gwt-TextBox control-widget']
+drp_TypeOfRequest=//div[@class='component control control_typeofRequest control-optionlist control-non-list-mode optionlistRequired required']/div/div/select[@class='gwt-ListBox control-widget']
+btn_Submit=//button[@title='Submit']
+
+#BorrowerSection Page Objects
+expand_BorrowerInfo=//div[@class='component control control_btnCatBorrower control-button control-non-list-mode Expandable']/div/div/button[@class='gwt-Button control-widget button-peripheral']
+btn_BorrowerAdd=//div[@class='component control control_pane14__new control-button control-non-list-mode']
+drp_Relationship=//div[@class='component control control_pane14__Borrower_relationship control-optionlist control-non-list-mode optionlistRequired']/div/div/select[@class='gwt-ListBox control-widget']
+drp_ExistingCustomer=//div[@class='component control control_pane14__Borrower_existingCustomer control-optionlist control-non-list-mode optionlistRequired']/div/div/select
+txtbx_CISNumber=//div[@class='component control control_pane14__Borrower_customerCISNumber control-textinput control-non-list-mode required']/div/div/input[@type='text']
+drp_BorrowerClassification=//div[@class='component control control_pane14__Borrower_borrowerType control-optionlist control-non-list-mode optionlistRequired']/div/div/select[@class='gwt-ListBox control-widget']
+txtbx_grossrevenuesales=//div[@class='component control control_pane14__Borrower_grossRevenueSales control-textinput control-non-list-mode numeric required']/div/div/input[@type='text']
+drp_BorrRegO=//div[@class='component control control_pane14__borrREGOApplicable control-optionlist control-non-list-mode OptionalListRequired required']/div/div/select[@class='gwt-ListBox control-widget']
+txtbx_YearsinBusiness=//div[@class='component control control_pane14__Borrower_yearsInBusiness control-textinput control-non-list-mode numeric required']/div/div/input[@type='text']
+txtbx_LineOfBusiness=//div[@class='component control control_pane14__Borrower_lineOfBusiness control-textinput control-non-list-mode required']/div/div/input[@type='text']
+txtbx_SourceDoc=//div[@class='component control control_pane14__sourceDocumentforGrossRevenueorAnnualGrossIncome control-textinput control-non-list-mode Exclusionlabel']/div/div/input[@type='text']
+btn_BorrowerSave=//button[@class='gwt-Button tf-dialog-ok button-primary']
+
+#BorrowerRelationshipSummary
+expand_BorrowerRelationship=//div[@class='component control control_btnCatBorrowerRelationshipSumm control-button control-non-list-mode Expandable']/div/div/button[@class='gwt-Button control-widget button-peripheral']
+txtbx_BankCard=//div[@class='component control control_pane60__BorrowerRelationshipSummary_bankCardExposure control-textinput control-non-list-mode numeric required']/div/div/input[@type='text']
+
+
+#GeneralInfoSection Page Objects
+expand_GeneralInfo=//div[@class='component control control_btnCatGeneralInfo control-button control-non-list-mode Expandable']/div/div/button[@class='gwt-Button control-widget button-peripheral']
+drp_LoanAction=//div[@class='component control control_pane37__generalInfoLoanReq_loanAction control-optionlist control-non-list-mode required']/div/div/select[@class='gwt-ListBox control-widget']
+drp_LoanPurpose=//div[@class='component control control_pane37__generalInfoLoanReq_loanPurpose control-optionlist control-non-list-mode required']/div/div/select
+drp_Product=//div[@class='component control control_pane37__generalInfoLoanReq_product control-optionlist control-non-list-mode required']/div/div/select
+drp_PersonalGuarantors=//div[@class='component control control_pane37__generalInfoLoanReq_personalGuarantors control-optionlist control-non-list-mode required']/div/div/select
+txtbx_TotalRequestedLoanAmount=//div[@class='component control control_pane37__generalInfoLoanReq_loanRequestAmount control-textinput control-non-list-mode numeric required']/div/div/input
+drp_RegO=//div[@class='component control control_pane37__regOCode control-optionlist control-non-list-mode required']/div/div/select
+txtbx_NAICS=//div[@class='component control control_pane37__generalInfoLoanReq_NAICSCode control-textinput control-non-list-mode required']/div/div/input
+drp_SecuredBy=//div[@class='component control control_pane37__generalInfoLoanReq_secured control-optionlist control-non-list-mode required']/div/div/select
+txtbx_RequestAmortMonths=//div[@class='component control control_pane37__generalInfoLoanReq_requestAmortizationM control-textinput control-non-list-mode numeric']/div/div/input
+txtbx_RequestMaturityMonths=//div[@class='component control control_pane37__generalInfoLoanReq_requestMaturityMonths control-textinput control-non-list-mode numeric Wraplabel required']/div/div/input
+drp_PayType=//div[@class='component control control_pane37__generalInfoLoanReq_payType control-optionlist control-non-list-mode optionlistRequired required']/div/div/select
+drp_PaymentFrequency=//div[@class='component control control_pane37__generalInfoLoanReq_paymentFrequency control-optionlist control-non-list-mode required']/div/div/select
+drp_AutomaticPayment=//div[@class='component control control_pane37__generalInfoLoanReq_automaticPayment control-optionlist control-non-list-mode required']/div/div/select
+drp_RateType=//div[@class='component control control_pane37__generalInfoLoanReq_rateType control-optionlist control-non-list-mode optionlistRequired required']/div/div/select
+txtbx_RateNonMandatory=//div[@class='component control control_pane37__generalInfoLoanReq_proposedRate control-textinput control-non-list-mode numeric']/div/div/input[@type='text']
+txtbx_LoanOrgFees=//div[@class='component control control_pane37__generalInfoLoanReq_loanOriginationFees control-textinput control-non-list-mode numeric required']/div/div/input
+drp_ApplicationTaken=//div[@class='component control control_pane37__applicationTaken control-optionlist control-non-list-mode required']/div/div/select
+drp_CommunityDevlopment=//div[@class='component control control_pane37__DoesthisqualifyforCommunityDevelopment control-optionlist control-non-list-mode Wraplabel required']/div/div/select
+radio_SB_SystemApproved_Decision=//input[@value='SYSTEMAPPROVED' and contains(@name,'decision')]
+
+#CollateralSection Page Objects
+expand_Collateral=//div[@class='component control control_btnCatCollateral control-button control-non-list-mode Expandable']/div/div/button
+btn_CollateralAdd=//div[@class='component control control_pane10__add control-button control-non-list-mode']/div/div/button
+drp_CollType=//div[@class='component control control_pane10__Collateral_collateralType control-optionlist control-non-list-mode collateraldescription required']/div/div/select
+drp_CollDesc=//div[@class='component control control_pane10__Collateral_collateralDescription control-optionlist control-non-list-mode collateraldescription required']/div/div/select
+drp_IsReDirectOrCrossed=//div[@class='component control control_pane10__istheREcollateralDirectorCrossed control-optionlist control-non-list-mode required']/div/div/select
+drp_IsAppraisalRequired=//div[@class='component control control_pane10__Collateral_isanewappraisalrequired control-optionlist control-non-list-mode optionlistRequired']/div/div/select
+txtbx_BookMarketVal=//div[@class='component control control_pane10__Collateral_bookMarketValue control-textinput control-non-list-mode numeric required']/div/div/input
+txtbx_SourceOfValue=//div[@class='component control control_pane10__Collateral_sourceofValue control-textinput control-non-list-mode required']/div/div/input
+txtbx_DateOfVal=//div[@class='component control control_pane10__Collateral_dateofValuation control-datetime control-non-list-mode DatetimeC required']/div/div/div/table/tbody/tr/td/input
+btn_CollateralSave=//button[@class='gwt-Button tf-dialog-ok button-primary']
+
+#HMDASection Page Objects
+expand_HMDA=//div[@class='component control control_btnCatHMDAInfo control-button control-non-list-mode Expandable']/div/div/button
+q1_HMDA=//div[@class='component control control_pane382__isAppTempFinance control-optionlist control-non-list-mode Wraplabel']/div/div/select
+q2_HMDA=//div[@class='component control control_pane382__isRevolvingLineOfCredit control-optionlist control-non-list-mode Wraplabel']/div/div/select
+q3_HMDA=//div[@class='component control control_pane382__isRenewModNoNewMoney control-optionlist control-non-list-mode Wraplabel']/div/div/select
+
+#Buttons Page Objects
+btn_SaveLoanAsDraft=//div[@class='component control control_btnSave control-button control-non-list-mode ButtonSy']
