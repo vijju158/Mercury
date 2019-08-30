@@ -6,7 +6,6 @@ btn_LogIn=//input[@name='login']
 
 #Home Page Objects
 text_home=//font[contains(text(),'Use our')]
-btn_BusinessSevices=.//*[@title='Show list of business services']/span[text()='Business Services']
 lbl_userTitle=/html/body/div/div/div/div/div[2]/div[1]/section[1]/div
 lnk_contact=//a[contains(text(),'Contacts')]
 lnk_newContact=//a[contains(text(),'New Contact')]
