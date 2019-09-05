@@ -65,8 +65,7 @@ public class DriverScriptTest {
     	OR= new Properties(System.getProperties());
     	//Loading all the properties from Object Repository property file in to OR object
     	OR.load(fs);
-   
-		DriverScriptTest startEngine = new DriverScriptTest();
+   		DriverScriptTest startEngine = new DriverScriptTest();
 		startEngine.execute_TestCase();
     }	
     
